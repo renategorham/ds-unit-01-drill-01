@@ -1,0 +1,58 @@
+Scenario 1:
+You work at an e-commerce company that sells three goods: widgets, doodads, and fizzbangs. The head of advertising asks you which they should feature in their new advertising campaign. You have data on individual visitors' sessions (activity on a website, pageviews, and purchases), as well as whether or not those users converted from an advertisement for that session. You also have the cost and price information for the goods.
+
+Question:
+Which product should be featured in an advertising campaign that would return the greatest revenue?
+
+Technical plan:
+1) rank conversions from advertisements wrt revenue
+2) list characteristics and most common activities for advertisements from the top quartile of revenue
+3) list characteristics and most common activities for advertisements from the bottom quartile of revenue
+4) determine significant differences between top and bottom quartile
+--feature the product that has a significantly higher occurrence in the top quartile and significant faster purchase
+
+Scenario 2:
+You work at a web design company that offers to build websites for clients. Signups have slowed, and you are tasked with finding out why. The onboarding funnel has three steps: email and password signup, plan choice, and payment. On a user level you have information on what steps they have completed as well as timestamps for all of those events for the past 3 years. You also have information on marketing spend on a weekly level.
+
+Question:
+Why have new customer acquisition slowed?
+
+Technical plan:
+1) calculate fallout rates and new customer acquisition at each step of the onboarding process wrt week.
+2) correlate marketing spend and activities with fallout rates and new customer acquisition
+--adjust spend and activities to a level that returns optimum acquisition
+
+Scenario 3:
+You work at a hotel website and currently the website ranks search results by price. For simplicity's sake, let's say it's a website for one city with 100 hotels. You are tasked with proposing a better ranking system. You have session information, price information for the hotels, and whether each hotel is currently available.
+
+Question:
+What ranking system will return the optimum revenue?
+
+Technical plan:
+1) rank hotels wrt revenue
+2) list hotel views, booking rate, amenities, and price for the top quartile of revenue
+3) list hotel views, booking rate, amenities, and price for the bottom quartile of revenue
+4) determine significant differences between top and bottom quartile
+--rank hotels based on the differences that return highest revenue
+
+The above scenario and plan is company-centric, a better approach would find customer needs and rank based on fulfillment of needs.
+
+Scenario 4:
+You work at a social network, and the management is worried about churn (users stopping using the product). You are tasked with finding out if their churn is atypical. You have three years of data for users with an entry for every time they've logged in, including the timestamp and length of session.
+
+Question:
+Is churn atypical when compared to industry benchmarks?
+
+Technical plan:
+1) correlate session frequency and time to time as user
+2) gather industry benchmarks
+3) compare with benchmarks
+--churn is atypical when it is significantly less than or greater than benchmarks
+
+
+
+
+
+
+
+
